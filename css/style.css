@@ -1,0 +1,240 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1E293B;
+    background-color: #F8FAFC;
+}
+
+h1 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    color: #0F172A;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #0F172A;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #E2E8F0;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #0F172A;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #CBD5E1;
+}
+
+footer {
+    background-color: #0F172A;
+    color: #CBD5E1;
+    padding: 1.5rem 5%;
+    margin-top: 3rem;
+    border-top: 3px solid #38BDF8;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+/* Seletor de ID exclusivo para o cabeçalho */
+#cabecalho-principal {
+    background-color: #0F172A;
+    color: #FFFFFF;
+    padding: 1.25rem 5%;
+    border-bottom: 3px solid #38BDF8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo a {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    color: #38BDF8;
+}
+
+.menu-navegacao {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu-navegacao a {
+    color: #E2E8F0;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.menu-navegacao a:hover {
+    color: #38BDF8;
+}
+
+/* Estrutura Principal */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 5%;
+}
+
+/* Seção Hero */
+.secao-hero {
+    background-color: #FFFFFF;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2.5rem;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+    text-align: center;
+}
+
+.secao-hero h2 {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #475569;
+    border-bottom: none;
+    text-align: center;
+}
+
+.secao-hero p {
+    max-width: 750px;
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+}
+
+.container-imagem {
+    margin-top: 2rem;
+}
+
+.container-imagem img {
+    margin: 0 auto;
+}
+
+/* Classe reutilizável para botões de ação */
+.btn-acao {
+    display: inline-block;
+    background-color: #0284C7;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    margin-top: 0.5rem;
+    border: 2px solid #0284C7;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-acao:hover {
+    background-color: #0369A1;
+    border-color: #0369A1;
+}
+
+.btn-secundario {
+    background-color: rgba(2, 132, 199, 0.08);
+    color: #0284C7;
+    padding: 0.5rem 1.1rem;
+    font-size: 0.9rem;
+}
+
+.btn-secundario:hover {
+    background-color: #0284C7;
+    color: #FFFFFF;
+}
+
+/* Seções de Conteúdo e Lista */
+.secao-conteudo {
+    margin-bottom: 2.5rem;
+}
+
+.lista-tecnologias {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lista-tecnologias li {
+    background-color: #FFFFFF;
+    padding: 1.25rem;
+    border: 1px solid #CBD5E1;
+    border-left: 4px solid #0284C7;
+    border-radius: 6px;
+}
+
+/* Cards de Notícias */
+.card-noticia {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    #cabecalho-principal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-navegacao {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .secao-hero {
+        padding: 1.5rem 1rem;
+    }
+
+    .btn-acao {
+        width: 100%;
+    }
+}
